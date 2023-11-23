@@ -1,0 +1,38 @@
+.sidebar {
+  @apply flex md:block absolute md:relative md:py-40 md:px-32 rounded-lg;
+  height: 578px;
+  width: 300px;
+  background: url('../../../public/bg-sidebar-desktop.svg') no-repeat center;
+  background-size: cover;
+
+  @media (max-width: theme('screens.md')) {
+    @apply pt-24 gap-16;
+    background: none;
+    height: auto;
+    width: auto;
+  }
+
+  .wrapper {
+    @apply flex items-center gap-16 md:mb-32;
+  }
+
+  .identifier {
+    @apply flex items-center justify-center text-white border border-2 border-white w-32 h-32 rounded-pill;
+
+    &.active-step {
+      @apply bg-pool text-denim font-bold;
+    }
+  }
+
+  &-content {
+    @apply hidden md:flex flex-col;
+  }
+
+  &-name {
+    @apply text-12 text-light-blue;
+  }
+
+  &-description {
+    @apply text-14 text-white font-bold tracking-widest;
+  }
+}

@@ -1,0 +1,9 @@
+.heading {
+  &-primary {
+    @apply text-24 md:text-32 font-bold text-denim;
+  }
+
+  &-secondary {
+    @apply text-grey;
+  }
+}

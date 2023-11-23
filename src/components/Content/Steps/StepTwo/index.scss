@@ -1,0 +1,51 @@
+.plan {
+  &-content {
+    @apply flex flex-col mt-12 md:mt-0 md:flex-row justify-between gap-16;
+  }
+
+  &-item {
+    @apply flex gap-14 md:block border border-light-grey w-full py-20 px-16 rounded-lg cursor-pointer duration-200;
+
+    &:hover,
+    &.active {
+      @apply border-purple bg-pool;
+    }
+  }
+
+  &-title {
+    @apply font-medium text-denim text-16 mt-0 md:mt-40;
+  }
+
+  &-description {
+    @apply text-grey text-14;
+  }
+}
+
+.select-plan {
+  @apply flex items-center justify-center bg-pool rounded-lg p-12 mt-12 md:mt-40;
+
+  .plan-text {
+    @apply font-medium text-denim duration-200;
+
+    &.active {
+      @apply text-grey;
+    }
+  }
+
+  .toggler {
+    @apply relative bg-denim rounded-full cursor-pointer;
+    width: 42px;
+    height: 24px;
+  }
+
+  .switcher {
+    @apply absolute bg-white rounded-full w-12 h-12 duration-200;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.active {
+      transform: translateY(-50%) translateX(20px);
+    }
+  }
+}

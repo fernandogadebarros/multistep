@@ -1,0 +1,54 @@
+.addons {
+  @apply cursor-pointer border border-light-grey rounded-lg py-16 px-24 mb-16 duration-200;
+
+  &:hover,
+  &.active {
+    @apply border-purple bg-pool;
+  }
+
+  .addon {
+    &-item {
+      @apply flex items-center gap-24;
+    }
+
+    &-checkbox {
+      @apply w-20 h-20 rounded-lg;
+    }
+
+    &-indicator {
+      @apply absolute w-20 h-20 left-0;
+    }
+
+    &-info {
+      @apply flex-1 flex justify-between items-center;
+    }
+
+    &-name {
+      @apply text-denim font-medium;
+    }
+
+    &-description {
+      @apply text-grey text-14;
+    }
+
+    &-price {
+      @apply text-14 text-purple;
+    }
+  }
+
+  .addon-checkbox:checked + .addon-indicator {
+    @apply bg-purple rounded-sm;
+  }
+
+  .addon-checkbox:checked + .addon-indicator:before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid theme('colors.white');
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}

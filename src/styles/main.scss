@@ -1,0 +1,13 @@
+@import './global/tailwind.scss';
+@import './global/reset.scss';
+@import './global/utils.scss';
+
+@import '../components/Content';
+@import '../components/Content/ThankYou';
+@import '../components/Content/Steps/StepThree';
+@import '../components/Content/Steps/StepTwo';
+
+@import '../components/Sidebar';
+@import '../components/Heading';
+@import '../components/Form/Input';
+@import '../components/Form/Button';

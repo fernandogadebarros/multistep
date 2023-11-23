@@ -1,0 +1,29 @@
+.card {
+  @apply flex relative md:bg-white p-16 rounded-lg justify-center;
+  width: 940px;
+
+  @media (max-width: theme('screens.lg')) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: theme('screens.md')) {
+    @apply relative rounded-none;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../../../public/bg-sidebar-mobile.svg') no-repeat center;
+      background-size: cover;
+      height: 172px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

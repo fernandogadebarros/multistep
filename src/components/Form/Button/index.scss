@@ -1,0 +1,15 @@
+.button {
+  @apply px-16 md:px-24 py-10 md:py-14 font-medium rounded-lg;
+
+  &.primary {
+    @apply bg-denim hover:bg-purple text-white duration-200;
+  }
+
+  &.secondary {
+    @apply text-grey hover:text-denim duration-200;
+  }
+
+  &.tertiary {
+    @apply bg-purple hover:bg-light-purple text-white duration-200;
+  }
+}

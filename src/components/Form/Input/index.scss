@@ -1,0 +1,11 @@
+.label-field {
+  @apply block text-denim text-14 mb-8;
+}
+
+.input-field {
+  @apply px-16 py-12 w-full rounded-lg border border-light-grey font-bold text-grey placeholder:text-grey placeholder:font-bold;
+
+  &.error {
+    @apply border-red-blood;
+  }
+}

@@ -1,0 +1,19 @@
+.thank-you {
+  @apply flex flex-col items-center justify-center h-full;
+
+  @media (max-width: theme('screens.md')) {
+    @apply py-60;
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  .title {
+    @apply text-24 md:text-32 text-denim text-center font-bold mt-24 md:mt-32;
+  }
+
+  .description {
+    @apply text-grey text-center mt-8 md:mt-14;
+  }
+}
